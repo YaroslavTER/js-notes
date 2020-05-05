@@ -7,7 +7,7 @@ myObject.foo = "bar";
 /* If foo is not already present directly on myObject, the [[Prototype]] 
 chain is traversed, just like for the [[Set]] operation. 
 
-If foo is not found anywhere in the chain,  the property 
+If foo is not found anywhere in the chain, the property 
 foo is added directly to myObject with the specified value, 
 as expected. */
 
