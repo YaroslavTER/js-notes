@@ -96,10 +96,11 @@ function bind(fn, obj) {
 // New operator
 
 /*
-- a brand new object is created (aka, constructed) out of thin air
+- a brand new object is created (aka, constructed)
 - the newly constructed object is [[Prototype]]-linked
 - the newly constructed object is set as the this binding for that function call
-- unless the function returns its own alternate object, the new-invoked function call will automatically return the newly constructed object.
+- unless the function returns its own alternate object, the new-invoked function call 
+will automatically return the newly constructed object.
  */
 
 function foo(a) {
@@ -146,7 +147,7 @@ a.call(this, 1, 2, 3);
 a.bind(this, 1, 2, 3);
 
 /* 
-arrow function binds by creation time
+arrow function binds by declaration time
 default function binds in a runtime
 */
 
