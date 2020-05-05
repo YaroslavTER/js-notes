@@ -17,3 +17,7 @@ then it shadowed
 - if the higher property is writable: false, the property not shadowed
 - if the property is setter then setter will be used without adding any property
 to current object*/
+
+/* If you want to shadow foo in cases #2 and #3, you cannot use = assignment, 
+but must instead use Object.defineProperty(..) (see Chapter 3) to add foo 
+to myObject. */
